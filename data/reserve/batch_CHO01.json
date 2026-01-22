@@ -1,0 +1,84 @@
+{
+  "batch_id": "CHO_FedBatch_01_InternalStudy",
+
+  "cell_line": {
+    "name": "CHO-K1 (fed-batch optimized)",
+    "organism": "Cricetulus griseus",
+    "expression_system": "monoclonal antibody producer",
+    "source": "Internal laboratory data, generated based on real fed-batch cultivation profiles"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 2.0,
+    "max_volume_L": 3.0,
+    "initial_volume_L": 1.5
+  },
+
+  "process_time": {
+    "time_step_h": 24,
+    "total_duration_h": 240
+  },
+
+  "time_step_h": 24,
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 120,
+    "post_shift_temperature_C": 33.0,
+    "pH_setpoint": 7.0,
+    "DO_setpoint_percent": 40
+  },
+
+  "initial_conditions": {
+    "V": 1.5,
+    "TCD": 0.25,
+    "Viab": 0.96,
+    "G": 4.0,
+    "Lac": 0.1,
+    "NH4": 0.02,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.075,
+    "K_s": 0.35,
+    "Ki_L": 8.0,
+    "Ki_N": 0.3,
+    "Y_XG": 1.6,
+    "m_G": 0.004,
+    "Y_LG": 0.5,
+    "alpha": 0.0002,
+    "k_d0": 0.00055,
+    "beta": 0.03,
+    "Vcrit": 0.85,
+    "s": 10.0,
+    "qP_max": 0.002,
+    "KP": 0.35,
+    "rho": 1000.0,
+    "Ki_Lac": 6.0,
+    "Ki_NH4": 7.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.7,
+    "Y_XG_factor": 0.95,
+    "Y_LG_factor": 0.85,
+    "qP_max_factor": 1.7,
+    "k_d0_factor": 0.85
+  },
+
+  "feeds": {
+    "glucose_control": {
+      "enabled": true,
+      "target_glucose_g_per_L": 2.0,
+      "max_feed_rate_g_per_h": 2.0
+    }
+  },
+
+  "model_assumptions": {
+    "well_mixed": true,
+    "constant_pH_DO": true,
+    "Xv_calculated_from_TCD_and_viability": true,
+    "temperature_affects_mu": true
+  }
+}
