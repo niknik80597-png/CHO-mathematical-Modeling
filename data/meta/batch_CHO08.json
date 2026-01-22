@@ -1,0 +1,85 @@
+{
+  "batch_id": "Perfusion_Seed_2014",
+  
+  "cell_line": {
+    "name": "CHO-S (suspension adapted)",
+    "organism": "Cricetulus griseus",
+    "expression_system": "monoclonal antibody producer",
+    "source": "Biotechnology Progress, 30(3): 616-625, 2014"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 5.0,
+    "max_volume_L": 7.0,
+    "initial_volume_L": 4.0,
+    "type": "stirred-tank bioreactor with perfusion capability"
+  },
+
+  "process_time": {
+    "time_step_h": 12,
+    "total_duration_h": 192
+  },
+
+  "time_step_h": 12,
+
+  "process_parameters": {
+    "initial_temperature_C": 36.5,
+    "time_shift_h": 96,
+    "post_shift_temperature_C": 33.0,
+    "pH_setpoint": 7.1,
+    "DO_setpoint_percent": 60
+  },
+
+  "initial_conditions": {
+    "V": 4.0,
+    "TCD": 0.8,
+    "Viab": 0.98,
+    "G": 4.5,
+    "Lac": 0.15,
+    "NH4": 0.03,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.14,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 1.7,
+    "m_G": 0.003,
+    "Y_LG": 0.6,
+    "alpha": 0.0003,
+    "k_d0": 0.0015,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.007,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.72,
+    "Y_XG_factor": 0.98,
+    "Y_LG_factor": 0.75,
+    "qP_max_factor": 2.1,
+    "k_d0_factor": 0.70
+  },
+
+  "article_reference": {
+    "doi": "10.1002/btpr.1884",
+    "title": "Perfusion seed cultures improve biopharmaceutical fed-batch production capacity and product quality",
+    "authors": ["W.C. Yang", "J. Lu", "C. Kwiatkowski", "H. Yuan", "R. Kshirsagar", "T. Ryll", "Y.M. Huang"],
+    "year": 2014,
+    "journal": "Biotechnology Progress"
+  },
+
+  "simulation_notes": {
+    "based_on": "Yang et al. (2014) - Perfusion seeding for fed-batch",
+    "process_innovation": "Perfusion seed culture for high-density inoculation",
+    "growth_profile": "Rapid growth due to high-quality seed",
+    "product_quality": "Improved glycosylation profile noted"
+  }
+}

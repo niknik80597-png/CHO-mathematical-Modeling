@@ -1,0 +1,85 @@
+{
+  "batch_id": "Oxidative_Metabolism_2013",
+  
+  "cell_line": {
+    "name": "CHO with enhanced oxidative metabolism",
+    "organism": "Cricetulus griseus",
+    "expression_system": "monoclonal antibody producer",
+    "source": "Biotechnology and Bioengineering, 110(9): 2394-2402, 2013"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 2.0,
+    "max_volume_L": 3.0,
+    "initial_volume_L": 1.5,
+    "type": "controlled bioreactor with metabolic monitoring"
+  },
+
+  "process_time": {
+    "time_step_h": 24,
+    "total_duration_h": 240
+  },
+
+  "time_step_h": 24,
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 120,
+    "post_shift_temperature_C": 33.0,
+    "pH_setpoint": 7.0,
+    "DO_setpoint_percent": 70
+  },
+
+  "initial_conditions": {
+    "V": 1.5,
+    "TCD": 0.2,
+    "Viab": 0.96,
+    "G": 3.0,
+    "Lac": 0.05,
+    "NH4": 0.01,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.085,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 1.7,
+    "m_G": 0.003,
+    "Y_LG": 0.6,
+    "alpha": 0.0002,
+    "k_d0": 0.0007,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.002,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.80,
+    "Y_XG_factor": 1.05,
+    "Y_LG_factor": 0.90,
+    "qP_max_factor": 1.7,
+    "k_d0_factor": 0.85
+  },
+
+  "article_reference": {
+    "doi": "10.1002/bit.24892",
+    "title": "Effect of altered glutamine and glucose concentrations on the oxidative metabolism of CHO cells",
+    "authors": ["N. Templeton", "J. Dean", "P. Reddy"],
+    "year": 2013,
+    "journal": "Biotechnology and Bioengineering"
+  },
+
+  "simulation_notes": {
+    "based_on": "Templeton et al. (2013) - Oxidative metabolism study",
+    "metabolic_profile": "Shift toward oxidative metabolism",
+    "lactate_production": "Reduced lactate due to oxidative shift",
+    "energy_efficiency": "Improved ATP yield per glucose"
+  }
+}

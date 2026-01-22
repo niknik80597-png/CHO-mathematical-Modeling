@@ -1,0 +1,85 @@
+{
+  "batch_id": "Metabolic_Control_1988",
+  
+  "cell_line": {
+    "name": "CHO (unspecified)",
+    "organism": "Cricetulus griseus",
+    "expression_system": "recombinant protein producer",
+    "source": "Biotechnology and Bioengineering, 32(4): 491-506, 1988"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 1.0,
+    "max_volume_L": 1.5,
+    "initial_volume_L": 0.8,
+    "type": "bench-scale bioreactor"
+  },
+
+  "process_time": {
+    "time_step_h": 24,
+    "total_duration_h": 168
+  },
+
+  "time_step_h": 24,
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 96,
+    "post_shift_temperature_C": 34.0,
+    "pH_setpoint": 7.0,
+    "DO_setpoint_percent": 50
+  },
+
+  "initial_conditions": {
+    "V": 0.8,
+    "TCD": 0.3,
+    "Viab": 0.95,
+    "G": 3.0,
+    "Lac": 0.05,
+    "NH4": 0.01,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.085,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 1.4,
+    "m_G": 0.003,
+    "Y_LG": 1.0,
+    "alpha": 0.00018,
+    "k_d0": 0.0015,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.0033,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.75,
+    "Y_XG_factor": 1.0,
+    "Y_LG_factor": 0.85,
+    "qP_max_factor": 1.4,
+    "k_d0_factor": 0.8
+  },
+
+  "article_reference": {
+    "doi": "10.1002/bit.260320413",
+    "title": "Reduction of waste product excretion via nutrient control: possible strategies for maximizing mammalian cell productivity",
+    "authors": ["M.W. Glacken", "R.J. Fleischaker", "A.J. Sinskey"],
+    "year": 1988,
+    "journal": "Biotechnology and Bioengineering"
+  },
+
+  "simulation_notes": {
+    "based_on": "Glacken et al. (1988) - Early metabolic control study",
+    "metabolic_control": "Focus on reducing lactate and ammonia",
+    "feeding_strategy": "Nutrient-controlled feeding to minimize waste",
+    "historical_significance": "Early work on metabolic engineering"
+  }
+}

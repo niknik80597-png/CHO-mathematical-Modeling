@@ -1,0 +1,99 @@
+{
+  "batch_id": "Metabolic_Study_2015",
+  
+  "cell_line": {
+    "name": "CHO-DG44",
+    "organism": "Cricetulus griseus",
+    "expression_system": "monoclonal antibody producer",
+    "source": "Biotechnology and Bioengineering, 112(3): 521-535, 2015"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 2.0,
+    "max_volume_L": 3.0,
+    "initial_volume_L": 1.5,
+    "type": "stirred-tank bioreactor"
+  },
+
+  "process_time": {
+    "time_step_h": 24,
+    "total_duration_h": 192
+  },
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 96,
+    "post_shift_temperature_C": 32.0,
+    "pH_setpoint": 7.1,
+    "DO_setpoint_percent": 50
+  },
+
+  "initial_conditions": {
+    "V": 1.5,
+    "TCD": 0.5,
+    "Viab": 0.98,
+    "G": 5.5,
+    "Lac": 0.1,
+    "NH4": 0.03,
+    "P": 0.0
+  },
+  "time_step_h": 24,
+
+  "kinetics_parameters": {
+    "mu_max": 0.14,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 1.3,
+    "m_G": 0.003,
+    "Y_LG": 1.0,
+    "alpha": 0.0003,
+    "k_d0": 0.0017,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.009,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.68,
+    "Y_XG_factor": 0.92,
+    "Y_LG_factor": 0.75,
+    "qP_max_factor": 1.6,
+    "k_d0_factor": 0.55
+  },
+
+  "feeds": {
+    "glucose_control": {
+      "enabled": true,
+      "target_glucose_g_per_L": 0.3,
+      "glucose_solution_concentration_g_per_L": 400.0
+    },
+    
+    "other_feed": {
+      "concentration_g_per_L": 180.0,
+      "amino_acid_composition": "enriched for essential AAs",
+      "vitamins_and_trace_elements": "optimized"
+    }
+  },
+
+  "article_reference": {
+    "doi": "10.1002/bit.25450",
+    "title": "Amino acid and glucose metabolism in fed-batch CHO cell culture affects antibody production and glycosylation",
+    "authors": ["Y. Fan", "I. Jimenez Del Val", "C. Müller", "J. Wagtberg Sen", "S.K. Rasmussen", "C. Kontoravdi", "D. Weilguny", "M.R. Andersen"],
+    "year": 2015,
+    "journal": "Biotechnology and Bioengineering"
+  },
+
+  "simulation_notes": {
+    "based_on": "Experimental data from Fan et al. (2015) - Figure 2 and 3",
+    "cell_growth_profile": "0.5 to 18e6 cells/mL over 192h",
+    "metabolic_features": "Detailed AA metabolism data available",
+    "glycosylation_data": "Available in original article",
+    "data_points": "8 time points (0, 24, 48, 72, 96, 120, 144, 168, 192h)"
+  }
+}

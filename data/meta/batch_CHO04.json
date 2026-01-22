@@ -1,0 +1,85 @@
+{
+  "batch_id": "Generic_FedBatch_2000",
+  
+  "cell_line": {
+    "name": "CHO (unspecified)",
+    "organism": "Cricetulus griseus", 
+    "expression_system": "recombinant antibody producer",
+    "source": "Biotechnology and Bioengineering, 67(5): 585-597, 2000"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 10.0,
+    "max_volume_L": 15.0,
+    "initial_volume_L": 8.0,
+    "scale": "pilot-scale"
+  },
+
+  "process_time": {
+    "time_step_h": 24,
+    "total_duration_h": 288
+  },
+
+  "time_step_h": 24,
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 144,
+    "post_shift_temperature_C": 31.0,
+    "pH_setpoint": 7.0,
+    "DO_setpoint_percent": 30
+  },
+
+  "initial_conditions": {
+    "V": 8.0,
+    "TCD": 0.4,
+    "Viab": 0.96,
+    "G": 4.0,
+    "Lac": 0.15,
+    "NH4": 0.04,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.13,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 1.8,
+    "m_G": 0.003,
+    "Y_LG": 0.8,
+    "alpha": 0.0003,
+    "k_d0": 0.0011,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.007,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.6,
+    "Y_XG_factor": 0.85,
+    "Y_LG_factor": 0.65,
+    "qP_max_factor": 2.0,
+    "k_d0_factor": 0.4
+  },
+
+  "article_reference": {
+    "doi": "10.1002/(SICI)1097-0290(20000305)67:5<585::AID-BIT9>3.0.CO;2-H",
+    "title": "A high-yielding, generic fed-batch cell culture process for production of recombinant antibodies",
+    "authors": ["P.W. Sauer", "J.E. Burky", "M.C. Wesson", "H.D. Sternard", "L. Qu"],
+    "year": 2000,
+    "journal": "Biotechnology and Bioengineering"
+  },
+
+  "simulation_notes": {
+    "based_on": "Sauer et al. (2000) - Classic fed-batch process",
+    "characteristics": "High cell density process with lactate re-utilization",
+    "productivity": "High titer with optimized feeding",
+    "scale": "Pilot-scale data suitable for scaling"
+  }
+}

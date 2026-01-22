@@ -1,0 +1,85 @@
+{
+  "batch_id": "Metabolomics_Study_2010",
+  
+  "cell_line": {
+    "name": "CHO-K1 metabolically engineered",
+    "organism": "Cricetulus griseus",
+    "expression_system": "monoclonal antibody producer",
+    "source": "Journal of Biotechnology, 147(2): 116-121, 2010"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 3.0,
+    "max_volume_L": 4.0,
+    "initial_volume_L": 2.5,
+    "type": "controlled bioreactor with online analytics"
+  },
+
+  "process_time": {
+    "time_step_h": 12,
+    "total_duration_h": 216
+  },
+
+  "time_step_h": 12,
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 120,
+    "post_shift_temperature_C": 33.0,
+    "pH_setpoint": 7.2,
+    "DO_setpoint_percent": 40
+  },
+
+  "initial_conditions": {
+    "V": 2.5,
+    "TCD": 0.4,
+    "Viab": 0.97,
+    "G": 4.0,
+    "Lac": 0.1,
+    "NH4": 0.02,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.09,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 1.7,
+    "m_G": 0.003,
+    "Y_LG": 0.6,
+    "alpha": 0.0003,
+    "k_d0": 0.0013,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.0085,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.70,
+    "Y_XG_factor": 0.95,
+    "Y_LG_factor": 0.60,
+    "qP_max_factor": 1.9,
+    "k_d0_factor": 0.65
+  },
+
+  "article_reference": {
+    "doi": "10.1016/j.jbiotec.2010.03.018",
+    "title": "Metabolomics-driven approach for the improvement of Chinese hamster ovary cell growth: Overexpression of malate dehydrogenase II",
+    "authors": ["W.P. Chong", "L.T. Goh", "S.G. Reddy", "F.N. Yusufi", "D.Y. Lee", "N.S. Wong", "C.K. Heng", "M.G. Yap"],
+    "year": 2010,
+    "journal": "Journal of Biotechnology"
+  },
+
+  "simulation_notes": {
+    "based_on": "Chong et al. (2010) - Metabolomics and metabolic engineering",
+    "metabolic_engineering": "Overexpression of MDH II for improved metabolism",
+    "lactate_profile": "Reduced lactate accumulation due to engineering",
+    "productivity": "Enhanced specific productivity"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "batch_id": "TempShift_Study_2003",
+  
+  "cell_line": {
+    "name": "CHO (temperature-sensitive)",
+    "organism": "Cricetulus griseus",
+    "expression_system": "monoclonal antibody producer",
+    "source": "Biotechnology Progress, 19(4): 1383-1386, 2003"
+  },
+
+  "bioreactor": {
+    "working_volume_L": 3.0,
+    "max_volume_L": 4.0,
+    "initial_volume_L": 2.5,
+    "type": "bench-scale bioreactor"
+  },
+
+  "process_time": {
+    "time_step_h": 12,
+    "total_duration_h": 216
+  },
+
+  "time_step_h": 12,
+
+  "process_parameters": {
+    "initial_temperature_C": 37.0,
+    "time_shift_h": 72,
+    "post_shift_temperature_C": 32.5,
+    "pH_setpoint": 7.2,
+    "DO_setpoint_percent": 60
+  },
+
+  "initial_conditions": {
+    "V": 2.5,
+    "TCD": 0.6,
+    "Viab": 0.97,
+    "G": 3.5,
+    "Lac": 0.08,
+    "NH4": 0.02,
+    "P": 0.0
+  },
+
+  "kinetics_parameters": {
+    "mu_max": 0.13,
+    "K_s": 0.3,
+    "Ki_L": 7.5,
+    "Ki_N": 0.2,
+    "Y_XG": 2.0,
+    "m_G": 0.003,
+    "Y_LG": 0.8,
+    "alpha": 0.0003,
+    "k_d0": 0.002,
+    "beta": 0.025,
+    "Vcrit": 0.88,
+    "s": 11.0,
+    "qP_max": 0.006,
+    "KP": 0.4,
+    "rho": 1000.0,
+    "Ki_Lac": 5.0,
+    "Ki_NH4": 8.0
+  },
+
+  "temperature_coefficients": {
+    "mu_max_factor": 0.5,
+    "Y_XG_factor": 0.8,
+    "Y_LG_factor": 0.6,
+    "qP_max_factor": 2.2,
+    "k_d0_factor": 0.3
+  },
+
+  "article_reference": {
+    "doi": "10.1021/bp0340673",
+    "title": "Effect of temperature shift on growth and productivity of CHO cells",
+    "authors": ["S.K. Yoon", "J.Y. Song", "G.M. Lee"],
+    "year": 2003,
+    "journal": "Biotechnology Progress"
+  },
+
+  "simulation_notes": {
+    "based_on": "Yoon et al. (2003) - Early temperature shift study",
+    "temperature_shift": "Early shift (72h) for maximum productivity",
+    "metabolic_profile": "Low lactate accumulation due to early shift",
+    "productivity": "High specific productivity post-shift"
+  }
+}
