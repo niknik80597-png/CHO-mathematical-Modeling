@@ -1,0 +1,92 @@
+{
+  "batch_comparisons": {
+    "CHO08_CHO08": {
+      "mech_r2": 0.9330850663081623,
+      "hybrid_r2": 0.4503026390575776,
+      "mech_mape": 47.728962844885956,
+      "hybrid_mape": 47.28587776976758,
+      "r2_improvement": -0.48278242725058473,
+      "mape_improvement": 0.44308507511837547,
+      "n_points": 17,
+      "improvement_percent": -51.740451613994665
+    },
+    "CHO02_CHO02": {
+      "mech_r2": 0.8972338895221202,
+      "hybrid_r2": 0.9618831871894276,
+      "mech_mape": 43.80250341553053,
+      "hybrid_mape": 44.28846158852409,
+      "r2_improvement": 0.06464929766730731,
+      "mape_improvement": -0.4859581729935627,
+      "n_points": 11,
+      "improvement_percent": 7.205400779248371
+    },
+    "CHO07_CHO07": {
+      "mech_r2": 0.9457817424056912,
+      "hybrid_r2": 0.9941597899171603,
+      "mech_mape": 23.550584707633597,
+      "hybrid_mape": 21.533949003865857,
+      "r2_improvement": 0.04837804751146901,
+      "mape_improvement": 2.01663570376774,
+      "n_points": 19,
+      "improvement_percent": 5.115138656453081
+    },
+    "CHO09_CHO09": {
+      "mech_r2": 0.9085400388732171,
+      "hybrid_r2": 0.9175372629613174,
+      "mech_mape": 42.04532231895855,
+      "hybrid_mape": 44.417256495115794,
+      "r2_improvement": 0.00899722408810033,
+      "mape_improvement": -2.3719341761572466,
+      "n_points": 11,
+      "improvement_percent": 0.9902947259494257
+    },
+    "CHO05_CHO05": {
+      "mech_r2": 0.8180847376166327,
+      "hybrid_r2": 0.9880547704321011,
+      "mech_mape": 56.193179804592305,
+      "hybrid_mape": 21.955234588145277,
+      "r2_improvement": 0.1699700328154684,
+      "mape_improvement": 34.23794521644703,
+      "n_points": 19,
+      "improvement_percent": 20.776580346756088
+    },
+    "CHO06_CHO06": {
+      "mech_r2": 0.9325888855217974,
+      "hybrid_r2": 0.9324596228249795,
+      "mech_mape": 42.62949446875993,
+      "hybrid_mape": 44.12131217978162,
+      "r2_improvement": -0.00012926269681790004,
+      "mape_improvement": -1.4918177110216888,
+      "n_points": 8,
+      "improvement_percent": -0.013860630211733182
+    },
+    "CHO04_CHO04": {
+      "mech_r2": 0.9900574346128456,
+      "hybrid_r2": 0.8971786362993462,
+      "mech_mape": 23.04286637695339,
+      "hybrid_mape": 32.52189133123281,
+      "r2_improvement": -0.09287879831349932,
+      "mape_improvement": -9.479024954279417,
+      "n_points": 13,
+      "improvement_percent": -9.3811525540252
+    },
+    "CHO03_CHO03": {
+      "mech_r2": 0.9720716496219685,
+      "hybrid_r2": 0.9859684191544485,
+      "mech_mape": 30.909916138309935,
+      "hybrid_mape": 26.61743727153283,
+      "r2_improvement": 0.013896769532480091,
+      "mape_improvement": 4.292478866777106,
+      "n_points": 9,
+      "improvement_percent": 1.4296034184192536
+    }
+  },
+  "mech_mean_r2": 0.9246804305603045,
+  "hybrid_mean_r2": 0.8909430409795448,
+  "mech_mean_mape": 38.737853759453024,
+  "hybrid_mean_mape": 35.34267752849573,
+  "r2_improvement": -0.0337373895807596,
+  "mape_improvement": 3.395176230957292,
+  "n_batches": 8,
+  "comparison_date": "2026-01-22 11:56:38"
+}
