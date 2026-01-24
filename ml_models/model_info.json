@@ -1,0 +1,63 @@
+{
+  "model_type": "Random Forest",
+  "training_date": "2026-01-19 21:42:50",
+  "metrics": {
+    "train_r2": 0.8787598368959972,
+    "test_r2": 0.4967696070887998,
+    "train_mae": 0.08914375741858103,
+    "test_mae": 0.3191844360395921,
+    "train_rmse": 0.1421858797185633,
+    "test_rmse": 0.4886435908899346,
+    "cv_mean": -0.07765359094674781,
+    "cv_std": 0.6283476798074353,
+    "feature_importance": {
+      "time_h": 0.042548844268889545,
+      "TCD": 0.07638650731163948,
+      "glucose": 0.0007253306733685476,
+      "lactate": 0.09464388546029125,
+      "ammonium": 0.07440729567998246,
+      "model_titer": 0.1259917817925669,
+      "exp_titer": 0.04402633551625214,
+      "time_norm": 0.0545620406378043,
+      "glucose_lactate_ratio": 0.001897664707599878,
+      "metabolic_quotient": 0.037674922612848535,
+      "titer_growth_rate": 0.12701071706715739,
+      "glucose_change_rate": 0.019653000846886055,
+      "lactate_change_rate": 0.17134650101599944,
+      "TCD_squared": 0.08926635113121621,
+      "glucose_squared": 0.0011505596935935287,
+      "TCD_times_time": 0.03870826158390444
+    },
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "test_size": 0.2
+    },
+    "training_date": "2026-01-19 21:42:46",
+    "n_samples": 107,
+    "n_features": 16
+  },
+  "features_used": [
+    "time_h",
+    "TCD",
+    "glucose",
+    "lactate",
+    "ammonium",
+    "model_titer",
+    "exp_titer",
+    "time_norm",
+    "glucose_lactate_ratio",
+    "metabolic_quotient",
+    "titer_growth_rate",
+    "glucose_change_rate",
+    "lactate_change_rate",
+    "TCD_squared",
+    "glucose_squared",
+    "TCD_times_time"
+  ],
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 10,
+    "random_state": 42
+  }
+}
